@@ -233,10 +233,7 @@ def test_mpfr_create():
 @example(float('nan'))
 def test_mpfr_hash(x):
     if math.isnan(x):
-        if sys.version_info < (3, 10):
-            assert hash(mpfr(x)) == hash(x) == sys.hash_info.nan
-        else:
-            assert hash(mpfr(x)) != hash(x)
+        assert hash(mpfr(x)) != hash(x)
     else:
         assert hash(mpfr(x)) == hash(x)
 

@@ -3,6 +3,11 @@ Release Notes
 
 .. currentmodule:: gmpy2
 
+Changes in gmpy2 2.4.0
+----------------------
+
+* Drop support for CPython < 3.11. (skirpichev)
+
 Changes in gmpy2 2.3.0
 ----------------------
 

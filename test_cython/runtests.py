@@ -37,12 +37,7 @@ try:
     dirname = os.path.dirname(__file__)
     if dirname != '':
         os.chdir(dirname)
-    if sys.version_info >= (3, 8):
-        shutil.copytree('./', tempdir_path, dirs_exist_ok=True)
-    else:
-        from distutils.dir_util import copy_tree
-
-        copy_tree('./', tempdir_path)
+    shutil.copytree('./', tempdir_path, dirs_exist_ok=True)
     os.chdir(tempdir_path)
 
     if subprocess.call([sys.executable, 'setup_cython.py', 'build_ext', '--inplace']):

@@ -22,8 +22,6 @@ classifiers = ['Development Status :: 5 - Production/Stable',
                'Operating System :: POSIX',
                'Programming Language :: C',
                'Programming Language :: Python :: 3',
-               'Programming Language :: Python :: 3.9',
-               'Programming Language :: Python :: 3.10',
                'Programming Language :: Python :: 3.11',
                'Programming Language :: Python :: 3.12',
                'Programming Language :: Python :: 3.13',
@@ -33,7 +31,7 @@ classifiers = ['Development Status :: 5 - Production/Stable',
                "Programming Language :: Python :: Implementation :: PyPy",
                'Topic :: Scientific/Engineering :: Mathematics',
                'Topic :: Software Development :: Libraries :: Python Modules']
-requires-python = '>=3.9'
+requires-python = '>=3.11'
 
 [project.readme]
 file = 'README.rst'
@@ -41,8 +39,7 @@ content-type = 'text/x-rst'
 
 [project.optional-dependencies]
 docs = ['sphinx>=4', 'sphinx-rtd-theme>=1']
-tests = ['pytest', 'hypothesis', 'cython', 'mpmath', 'setuptools',
-         'numpy; python_version>="3.11"']
+tests = ['pytest', 'hypothesis', 'cython', 'mpmath', 'setuptools', 'numpy']
 
 [project.urls]
 Homepage = 'https://github.com/gmpy2/gmpy2'
